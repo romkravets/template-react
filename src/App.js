@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './compoments/about/About';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.scss';
@@ -35,10 +36,6 @@ function App() {
 
 function Home() {
   return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
 }
 
 function Topic({ match }) {

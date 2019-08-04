@@ -1,0 +1,11 @@
+.menu {
+   &__items {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      flex: 1;
+      padding: 40px 0
+
+   }
+  
+}

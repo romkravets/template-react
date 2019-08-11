@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { slide as Menu } from "react-burger-menu";
+
 import './Header.scss';
 
-function Header() {
+export default props => {
    return (
-   <nav className="menu" >
+   <Menu {...props} className="menu" right disableAutoFocus noOverlay >
       <ul className="menu__items">
          <li className="menu__item">
             <Link to="/">Home</Link>
@@ -19,9 +21,7 @@ function Header() {
             <Link to="/topics">Topics</Link>
          </li> */}
      </ul>
-   </nav>
-    
+   </Menu>
    );
  }
 
- export default Header;

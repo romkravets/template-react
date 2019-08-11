@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Router>
-        <Header />
-          <div className="app__content">
+        <Header pageWrapId={"page-wrap"} outerContainerId={"App"} />
+          <div id="page-wrap" className="app__content">
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
